@@ -1,5 +1,5 @@
 - Hi, I’m Zeus Adler. AlRiever my nickname
-- I absolutely love to program video game mechanics and algorithms
-- I believe i am good at programming in C++, C# and Java.
+- I absolutely love to program video game mechanics.
+- I am learning game programming in C++, C# and Java. 
 - Dream company to work for: Ubisoft, EA.
 - my email: alriever1454@yahoo.com
