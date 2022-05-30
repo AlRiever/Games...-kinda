@@ -6,7 +6,8 @@
 #include <string>
 
 const int numitems = 5;  //Number of items available in the shop
-const std::string shopitems[numitems] = {"Armour", "Sword", "Horse", "Meds", "Food"}; //All the Shop Iteams available
+const std::string shopitems[numitems] = {"1. Armour", "2. Sword", "3. Horse", "4. Meds", "5. Food"}; //All the Shop Iteams available
+const std::string shop[numitems] = { "Armour", "Sword", "Horse", "Meds", "Food" };
 char buy, sure, viewInv, agreedToBuy, bother;
 
 int main(){
@@ -24,7 +25,7 @@ int main(){
 	std::cout << "Your Inventory\n";
 	for (int i = 0; i < numitems; i += 1) {  //displays player's current inventory with atleast one number of the item present
 		if (inventory[i] > 0) {
-			std::cout << inventory[i] << " x " << shopitems[i] << std::endl;
+			std::cout << inventory[i] << " x " << shop[i] << std::endl;
 		}
 	}
 
@@ -37,7 +38,7 @@ int main(){
 			std::cin >> itemNo;  //if buy == 'y' then, user inputs the serial number of the item they want to buy
 			itemNo -= 1;
 
-			std::cout << "Are you sure you want to purchase " << shopitems[itemNo] << " (y/n)" << std::endl;
+			std::cout << "Are you sure you want to purchase " << shop[itemNo] << " (y/n)" << std::endl;
 			std::cin >> sure;
 		}
 		if (buy == 'n') {
