@@ -1,0 +1,36 @@
+#include <stdlib.h>
+#include <iostream>
+
+class RandomNumberGenerator {
+private:
+	int _random, _minor, _major;
+
+public:
+	void SetMinor(int neg) {
+		_minor = neg;  //gonna fetch us the minimum number
+	}
+	void SetMajor(int pos) {
+		_major = pos;  //gonna fetch us the maximum number
+	}
+	int RandomNoFunction() {
+		_random = ((rand() % _major) + _minor);
+		return _random;
+	}
+};
+
+int main(void) {
+
+	int min, max;
+	std::cout << "Input the minimun number: ";
+	std::cin >> min;  //user provides minimum random generation number
+
+	std::cout << "Input the maximum number: ";
+	std::cin >> max;  //user provides maximum random generation number
+
+	RandomNumberGenerator Randomno;
+	Randomno.SetMinor(min);
+	Randomno.SetMajor(max);
+
+	std::cout << "\n" << Randomno.RandomNoFunction() << std::endl;
+	system("PAUSE");
+}
