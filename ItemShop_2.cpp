@@ -40,7 +40,7 @@ int main() {
 			std::cin >> useful;
 
 			if (useful == 'y') {
-				std::cout << "Input the serial number of the iteam you would like to purchase.\n";
+				std::cout << "Input the serial number of the item you would like to purchase.\n";
 				std::cin >> itemNo;
 				itemNo_ForArray = itemNo - 1;
 
