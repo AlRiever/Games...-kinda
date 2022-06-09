@@ -83,3 +83,4 @@ int main(){
 	system("PAUSE");
 	return 0;
 }
+// An updated version of this program with some nerw features added is available now, make sure to check out ItemShop_2.cpp
