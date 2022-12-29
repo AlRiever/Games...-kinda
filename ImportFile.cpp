@@ -5,21 +5,21 @@
 
 int main() {
 	std::fstream file;
-	std::vector <std::string> _levelData;
-	std::string TestFileName = "TestLevel.txt";
+	std::vector <std::string> _levelData;  //creating a verctor string
+	std::string TestFileName = "TestLevel.txt";  // creating a string variable with the (.txt) file's name
 	file.open(TestFileName);
-	if (file.fail()) {
+	if (file.fail()) {  //if failed to open the (.txt) file, program terminates immediately
 		perror(TestFileName.c_str());
 		exit(1);
 		system("PAUSE");
 	}
-	std::string line;
-	while (getline(file, line)) {
-		_levelData.push_back(line);
+	std::string line;  //line variable is empty
+	while (getline(file, line)) {  //scans every row in a string array
+		_levelData.push_back(line);  //nothing is inserted in the vector since line variable is empty
 	}
 	file.close();
 
-	for (auto x : _levelData) {
+	for (auto x : _levelData) {  //running a for loop to print out the (.txt) file
 		std::cout << x << "\n";
 	}
 	std::cout << "\n";
